@@ -12,6 +12,7 @@ async function fetchLeetCodeData(username) {
           reputation
           ranking
           solutionCount
+          userAvatar
         }
         submitStatsGlobal {
           acSubmissionNum {
@@ -84,6 +85,7 @@ if (!result || !result.data) {
     ranking: user.profile.ranking,
     solutionCount: user.profile.solutionCount,
     reputation: user.profile.reputation,
+    userAvatar: user.profile.userAvatar,
     submissionCalendar: user.userCalendar.submissionCalendar,
   };
 }
